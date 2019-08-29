@@ -176,9 +176,9 @@ services:
   caddy:
     image: stefanprodan/caddy
     ports:
-      - "3000:3000"
-      - "9090:9090"
-      - "9093:9093"
+      - "9990:3000"
+      - "9991:9090"
+      - "9993:9093"
       - "9094:9094"
     networks:
       - net
