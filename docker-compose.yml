@@ -65,7 +65,7 @@ services:
       - GF_SECURITY_ADMIN_USER=${ADMIN_USER:-admin}
       - GF_SECURITY_ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
       - GF_USERS_ALLOW_SIGN_UP=false
-      - GF_SERVER_ROOT_URL=${GF_SERVER_ROOT_URL:-localhost}
+      #- GF_SERVER_ROOT_URL=${GF_SERVER_ROOT_URL:-localhost}
       #- GF_SMTP_ENABLED=${GF_SMTP_ENABLED:-false}
       #- GF_SMTP_FROM_ADDRESS=${GF_SMTP_FROM_ADDRESS:-grafana@test.com}
       #- GF_SMTP_FROM_NAME=${GF_SMTP_FROM_NAME:-Grafana}
@@ -179,7 +179,7 @@ services:
       - "9990:3000"
       - "9991:9090"
       - "9993:9093"
-      - "9094:9094"
+      - "9994:9094"
     networks:
       - net
     environment:
